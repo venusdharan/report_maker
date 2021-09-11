@@ -5,7 +5,9 @@
                  <v-expansion-panels>
                         <v-expansion-panel>
                         <v-expansion-panel-header>
-                            {{subject_name}}
+                            <strong v-if="subject_name">{{subject_name}}</strong>
+                            <strong v-else>No Subject Name</strong>
+                            
                             <v-spacer></v-spacer>
                             <v-btn @click="remove_this" x-small text style="max-width:60px; margin-left:30px;">Remove</v-btn>
                         </v-expansion-panel-header>
@@ -23,7 +25,7 @@
                                         <thead>
                                             <tr>
                                             <th class="text-left">
-                                                Name
+                                                Name (Week/Month)
                                             </th>
                                             <th class="text-left">
                                                 Value
@@ -48,7 +50,7 @@
                                
 
                                    <v-text-field
-                                    label="Name"
+                                    label="Name (Week/Month)"
                                     v-model="att_name"
                                     ></v-text-field> 
                                     <v-text-field

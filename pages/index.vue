@@ -35,7 +35,7 @@
                   ></v-text-field>
                   From:<input v-model="start_date" type="date"/>
                   To:<input v-model="stop_date" type="date"/>
-                  <v-btn @click="export_pdf">Print</v-btn>  
+                  
             </v-col>
           </v-row>
           <v-row>
@@ -47,6 +47,12 @@
                     </component>
                   </li>
               </ul>
+               
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              <v-btn @click="export_pdf">Submit</v-btn> 
             </v-col>
           </v-row>
         </v-tab-item>

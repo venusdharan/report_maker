@@ -58,13 +58,13 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer-->
-    <v-footer
+    <!--v-footer
       :absolute="!fixed"
       app
        class="no-print"
     >
       <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    </v-footer-->
   </v-app>
 </template>
 
